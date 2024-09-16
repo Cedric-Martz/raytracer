@@ -1,0 +1,145 @@
+camera :
+{
+    resolution = { width = 300; };
+    from = { x = 278.0;
+        y = 278.0;
+        z = -765.0; };
+    at = { x = 278.0;
+        y = 278.0;
+        z = 0.0; }
+    rotation = { x = 0; y = 0; z = 0; };
+    fieldOfView = 40.0;
+    sPerPixel = 10;
+    depth = 50;
+    vup = { x = 0.0; y = 1.0; z =  0.0; }
+    focusAngle = 0.6;
+    focusDistance = 10.0;
+};
+
+primitives :
+{
+    spheres = (
+        {
+            x = 190.0;
+            y = 90.0;
+            z = 190.0;
+            r = 90.0;
+            color = {
+                r = 0.65;
+                g = 0.05;
+                b = 0.05;
+            };
+            material = "metal";
+        }
+    );
+    planes = (
+        # right
+        {
+            qx = 555.0;
+            qy = 0.0;
+            qz = 0.0;
+            ux = 0.0;
+            uy = 0.0;
+            uz = 555.0;
+            vx = 0.0;
+            vy = 555.0;
+            vz = 0.0;
+            material = "flat";
+            color = {
+                r = 0.65;
+                g = 0.1;
+                b = 0.1;
+            }
+        },
+        # left
+        {
+            qx = 0.0;
+            qy = 0.0;
+            qz = 555.0;
+            ux = 0.0;
+            uy = 0.0;
+            uz = -555.0;
+            vx = 0.0;
+            vy = 555.0;
+            vz = 0.0;
+            material = "flat";
+            color = {
+                r = 0.65;
+                g = 0.1;
+                b = 0.1;
+            }
+        },
+        # top
+        {
+            qx = 0.0;
+            qy = 555.0;
+            qz = 0.0;
+            ux = 555.0;
+            uy = 0.0;
+            uz = 0.0;
+            vx = 0.0;
+            vy = 0.0;
+            vz = 555.0;
+            material = "flat";
+            color = {
+                r = 0.65;
+                g = 0.1;
+                b = 0.1;
+            }
+        },
+        # bottom
+        {
+            qx = 0.0;
+            qy = 0.0;
+            qz = 555.0;
+            ux = 555.0;
+            uy = 0.0;
+            uz = 0.0;
+            vx = 0.0;
+            vy = 0.0;
+            vz = -555.0;
+            material = "glass";
+            color = {
+                r = 0.65;
+                g = 0.1;
+                b = 0.1;
+            }
+        },
+        # back
+        {
+            qx = 555.0;
+            qy = 0.0;
+            qz = 555.0;
+            ux = -555.0;
+            uy = 0.0;
+            uz = 0.0;
+            vx = 0.0;
+            vy = 555.0;
+            vz = 0.0;
+            material = "flat";
+            color = {
+                r = 0.65;
+                g = 0.1;
+                b = 0.1;
+            }
+        },
+        # light
+        {
+            qx = 213.0;
+            qy = 554.0;
+            qz = 227.0;
+            ux = 130.0;
+            uy = 0.0;
+            uz = 0.0;
+            vx = 0.0;
+            vy = 0.0;
+            vz = 105.0;
+            material = "light";
+            color = {
+                r = 15.0;
+                g = 15.0;
+                b = 15.0;
+            }
+        }
+    );
+}

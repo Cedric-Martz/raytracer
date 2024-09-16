@@ -1,0 +1,7 @@
+*.o
+raytracer
+.vscode
+*.ppm
+a.out
+*.log
+tempmain.cpp
